@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Cloud Web Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            text-align: center;
+            color: white;
+            margin-top: 100px;
+        }
+        .container {
+            background-color: rgba(0,0,0,0.4);
+            padding: 40px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #ff9800;
+            color: white;
+        }
+        button:hover {
+            background-color: #e68900;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to My Public Cloud Web App</h1>
+        <p>Deployed using GitHub and Cloud Virtual Machine</p>
+        <button onclick="showMessage()">Click Me</button>
+        <p id="demo"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("demo").innerHTML =
+            "🎉 Application Successfully Deployed!";
+        }
+    </script>
+
+</body>
+</html>
